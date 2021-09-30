@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <! this is how you link a file in a parallel folder>
+    <title>Calculation Form</title>
+
+    <meta charset="utf-8" />
+  </head>
+
+  <body background="dotsbg.jpg">
+    <div>
+      <form
+        id="form1"
+        name="form1"
+        action="index.html"
+        method="get"
+        target="_self"
+      >
+        <h1>Calculation Form<i class="far fa-smile"></i></h1>
+        <h2>--Force Equation--</h2>
+        <span class="forceFunction">
+        <input type="number" id="mass" placeholder="mass" />
+        <input type="number" id="acceleration" placeholder="acceleration" />
+        <div>
+          <button type = "button" value ="Calculate Force" id ="fe" onclick="computeForce();">
+          Calculate Force
+          </button>
+          <p id="force"></p>
+        </div>
+		<h3>--Kinematic Physic Equation (Velocity)--</h3>
+        <span class="KinematicFunction">
+        <input type="number" id="initial" placeholder="initial velocity m/s2" />
+        <input type="number" id="time" placeholder="time in seconds" />
+		    <input type="number" id="acceleration2" placeholder="acceleration" />
+          <div>
+            <button type = "button" value ="Calculate Displacement" id ="ke" onclick="computeAvgVelocity();">
+            Calculate Displacement
+            </button>
+              <p id="displacement"></p>
+           </div>
+		<h4>--Quadratic Equation--</h4>
+        <span class="QuadraticFunction">
+        <input type="number" id="sidea" placeholder=" Triangle Side A" />
+        <input type="number" id="sideb" placeholder="Triangle Side B" />
+        <input type="number" id="sidec" placeholder="Triangle Side C" />
+        <div>
+          <button type = "button" value ="Calculate Quadratic" id ="qe" onclick="computeQuadratic();">
+          Calculate F(x)
+          </button>
+            <pre>Positve: </pre><p id="quadraticPositive"></p>
+            <pre>Negative: </pre><p id="quadraticNegative"></p>
+         </div>
+		<h5>--Principal Equation--</h5>
+        <span class="PrincipalFunction">
+        <input type="number" id="PMT" placeholder="$$$ Amount Payment" />
+        <input type="number" id="r" placeholder="Interest Rate" />
+        <input type="number" id="n" placeholder="Number of Periods" />
+        <div>
+        <button type = "button" value ="Calculate Principal" id ="pe" onclick="computePrincipal();">
+          Calculate Principal
+          </button>
+            <p id="principal"></p>
+         </div>
+		<br>
+		<br>
+		<br>
+        <input class="button"
+          type="button"
+          id="submit"
+          value="Submit"
+          onclick="" 
+          
+        />
+        <p id="result"></p>   
+        <input class="button2" type="reset" value="Reset Box Inputs">
+      </form>
+    </div>
+    <p id="display"></p>
+    <script src="../js/script.js" type="text/javascript"></script>
+  </body>
+</html>

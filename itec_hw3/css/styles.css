@@ -1,0 +1,44 @@
+h1 {
+  font-size: 25pt;
+  text-align: center;
+  border: 3px solid #504f53;
+}
+
+h2 {
+  font-size: 15pt;
+}
+h3 {
+  font-size: 15pt;
+}
+h4 {
+  font-size: 15pt;
+}
+h5 {
+  font-size: 15pt;
+}
+pre {
+  font-size: 10pt;
+  font-weight: bolder;
+}
+
+.button {
+  position: absolute;
+  bottom: 5px;
+  width: 30%;
+  border: 3px solid #3e07c0;
+  font-size: 20pt;
+}
+.button2 {
+  position: fixed;
+  margin-left: 33%;
+  bottom: 5px;
+  width: 30%;
+  border: 3px solid #3e07c0;
+  font-size: 20pt;
+}
+
+p {
+  color: #028502;
+  font-size: 15pt;
+  font-weight: bolder;
+}
